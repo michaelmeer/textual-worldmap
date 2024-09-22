@@ -1,4 +1,4 @@
-from textual_worldmap.foo import foo
+from textual_worldmap.worldmapwidget import foo
 
 
 def test_foo():
