@@ -1,13 +1,12 @@
-
 #!/usr/bin/env python3
 """
 Demo Program to show the World Map Widget using the Textual Library
 """
+
 from textual.app import App, ComposeResult
-from textual.widgets import Footer, Header, RadioSet, RadioButton
+from textual.widgets import Footer, Header, RadioButton, RadioSet
 
 from textual_worldmap.worldmapwidget import WorldCoordinate, WorldMapWidget
-
 
 LOCATIONS = [
     #               Lat        Lon       Name
