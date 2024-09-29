@@ -57,7 +57,7 @@ class AsciiArtWidget(Static):
                 segments = [
                     Segment(self.graphic_lines[y][: self.highlighted_coordinate.x]),
                     Segment("X", Style(color="red", bgcolor="blue", bold=True, frame=True)),
-                    Segment(self.graphic_lines[y][self.highlighted_coordinate.x + 1:]),
+                    Segment(self.graphic_lines[y][self.highlighted_coordinate.x + 1 :]),
                 ]
                 return Strip(segments)
             return Strip([Segment(self.graphic_lines[y])])
@@ -143,15 +143,13 @@ __,-----"-..?----_/ )\    . ,-'"             "                  (__--/
         bottom_margin = 10
         if map_y - top_margin < 0 or map_y > map_rows - bottom_margin:
             raise ValueError(  # noqa: TRY003
-                f"The Lat, Lon ({world_coordinate.lat}, {world_coordinate.lon})"
-                f" was above" f" or below our margins"
+                f"The Lat, Lon ({world_coordinate.lat}, {world_coordinate.lon})" f" was above" f" or below our margins"
             )
 
         result = Coordinate(map_x, map_y - top_margin)
         return result
 
-    def standard_to_mercator_conversion(self,
-                                        world_coordinate: WorldCoordinate) -> tuple[float, float]:
+    def standard_to_mercator_conversion(self, world_coordinate: WorldCoordinate) -> tuple[float, float]:
         """Uses pyproj to convert standard coordinates to Mercator-Web-Coordinates"""
         crs_from = pyproj.Proj(init="epsg:4326")  # standard lon, lat coords
         crs_to = pyproj.Proj(init="epsg:3857")  # Web mercator projection (same as google maps)
