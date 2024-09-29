@@ -144,7 +144,7 @@ __,-----"-..?----_/ )\    . ,-'"             "                  (__--/
         top_margin = 10
         bottom_margin = 10
         if map_y - top_margin < 0 or map_y > map_rows - bottom_margin:
-            raise ValueError(
+            raise ValueError(  # noqa: TRY003
                 f"The Lat, Lon ({world_coordinate.lat}, {world_coordinate.lon}) was above"
                 f" or below our margins"
             )
