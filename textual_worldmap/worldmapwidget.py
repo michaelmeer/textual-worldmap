@@ -10,6 +10,7 @@ from textual.reactive import reactive
 from textual.strip import Strip
 from textual.widgets import Static
 
+#ruff: noqa: W291
 
 @dataclass
 class Coordinate:
@@ -84,7 +85,7 @@ class WorldMapWidget(AsciiArtWidget):
     def world_map_graphic() -> str:
         """A world map as ascii art"""
         return r"""          . _..::__:  ,-"-"._       |]       ,     _,.__
-  _.___ _ _<_>`!(._`.`-.    /        _._     `_ ,_/  '  '-._.---.-.__ 
+  _.___ _ _<_>`!(._`.`-.    /        _._     `_ ,_/  '  '-._.---.-.__   
 .{     " " `-==,',._\{  \  / {)     / _ ">_,-' `                 /-/_ 
  \_.:--.       `._ )`^-. "'      , [_/(                       __,/-'  
 '"'     \         "    _L       |-_,--'                )     /. (|    
