@@ -11,6 +11,7 @@ from textual.strip import Strip
 from textual.widgets import Static
 
 #ruff: noqa: W291
+#ruff: noqa: W293
 
 @dataclass
 class Coordinate:

@@ -37,15 +37,14 @@ class WorldmapWidgetDemoApp(App[None]):
     Screen {
         layout: horizontal;
     }
-        
-    
+
     WorldMapWidget {
         border: double $accent;
         height: auto;
         width: auto;
         align: center middle;
     }
-    
+
     RadioSet {
         background: green 20%;
         color: green;
@@ -53,7 +52,7 @@ class WorldmapWidgetDemoApp(App[None]):
         margin: 3;
         padding: 1;
         width: auto;
-        align: left top;        
+        align: left top;
     }
     """
 
