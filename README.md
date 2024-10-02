@@ -16,5 +16,3 @@ Thanks @HenrySeed!
 
 
 Repository initiated with [fpgmaas/cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry).
-
-Japan: :jp: :germany:
