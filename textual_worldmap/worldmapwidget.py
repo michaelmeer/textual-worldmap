@@ -57,7 +57,7 @@ class AsciiArtWidget(Static):
                 segments = [
                     Segment(self.graphic_lines[y][: self.highlighted_coordinate.x]),
                     Segment("X", Style(color="red", bgcolor="blue", bold=True, frame=True)),
-                    Segment(self.graphic_lines[y][self.highlighted_coordinate.x + 1:]),
+                    Segment(self.graphic_lines[y][self.highlighted_coordinate.x + 1 :]),
                 ]
                 return Strip(segments)
             return Strip([Segment(self.graphic_lines[y])])
