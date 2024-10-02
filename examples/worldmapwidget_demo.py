@@ -6,7 +6,7 @@ Demo Program to show the World Map Widget using the Textual Library
 from textual.app import App, ComposeResult
 from textual.widgets import Footer, Header, RadioButton, RadioSet
 
-from textual_worldmap.worldmapwidget import WorldCoordinate, WorldMapWidget
+from textual_worldmap import WorldCoordinate, WorldMapWidget
 
 LOCATIONS = [
     #               Lat        Lon       Name
@@ -20,7 +20,7 @@ LOCATIONS = [
     WorldCoordinate(39.768173, -434.715499, "New York :united_states:"),
     WorldCoordinate(59.334591, 18.063240, "Stockholm :sweden:"),
     WorldCoordinate(-23.5558, -46.6396, "Sao Paolo :brazil:"),
-    WorldCoordinate(35.689487, 139.691711, "Tokyo :japan:"),
+    WorldCoordinate(35.689487, 139.691711, "Tokyo 🇯🇵"),
     WorldCoordinate(49.240186, -123.110419, "Vancouver :canada:"),
     WorldCoordinate(48.208176, 16.373819, "Vienna :austria:"),
     WorldCoordinate(47.3769, 8.5417, "Zürich :switzerland:"),
